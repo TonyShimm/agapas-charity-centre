@@ -9,7 +9,7 @@ import {
 } from "react-bootstrap";
 import logo from "./logo192.png";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import Home from "../Pages/Home";
 import About from "../Pages/About";
@@ -61,12 +61,12 @@ export default class Header extends Component {
         </Navbar>
 
         <Router>
-          <Switch>
+          <Routes>
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
             <Route exact path="/contacts" component={Contacts} />
             <Route exact path="/blog" component={Blog} />
-          </Switch>
+          </Routes>
         </Router>
       </>
     );
