@@ -42,7 +42,7 @@ export default class Header extends Component {
               <Nav className="mr-auto">
                 <Nav.Link href="/"> Home </Nav.Link>
 
-                <Nav.Link href="/about"> About </Nav.Link>
+                <Nav.Link href="/about"> About us </Nav.Link>
 
                 <Nav.Link href="/contacts"> Contacts </Nav.Link>
 
@@ -62,10 +62,10 @@ export default class Header extends Component {
 
         <Router>
           <Routes>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/contacts" component={Contacts} />
-            <Route exact path="/blog" component={Blog} />
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/contacts" element={<Contacts />} />
+            <Route exact path="/blog" element={<Blog />} />
           </Routes>
         </Router>
       </>
